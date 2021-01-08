@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin: 0;  
+    background-color: rgb(255, 255, 255);
+}
+
+
+.divDD {
+    display: flex;
+    margin-top: 30px;
+    width: 65%;
+    height: 50px;
+    background-color: #b6b6b6;
+    border-radius: 18px; 
+    position: relative;
+    align-items: center;
+    border: 3px solid #68ecfd;      
+}
+span {
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#app{
+    display: flex;
+    margin-top: 100px;
+    /* margin-left:100% */
+    position: absolute;
+}    
+.sudoku-game { 
+    display: flex;
+    flex-wrap: wrap;
+}    
+.sudoku-segment {
+    border: 1px solid gray;
+    margin: 1px;
+    padding: 1px;
+    width: calc(100%/3 - 6px);
+    height: calc(100%/3 - 6px);
+    display: flex;
+    flex-wrap: wrap;
+}    
+
+.sudoku-cell {
+    text-align: center;
+    font-size: 100%;
+    width: calc(100%/3 - 2px);
+    height: calc(100%/3 - 2px);
+    border: none;
+    outline: none;
+    padding:  0;
+    margin:  1px;
+    background: #c9faff;
+    cursor: pointer;
+}    
+
+.sudoku-cell.start-cell {
+    color: rgb(97, 97, 97);
+}    
+.sudoku-cell.selected-cell{
+    background: rgb(3, 251, 251);
+}    
+.sudoku-cell.supported-cell{
+    background: #a1ffdb;
+}    
+.sudoku-cell.important-cell{
+    color: blue;
+}    
+.sudoku-cell.selected-cell.error{
+    background: rgb(255, 185, 198);
+}    
+.sudoku-cell.error{
+    color: red;
+}    
+button {
+    height: 50px;
+    width: 250px;
+    margin: 550px 0px 30px 0px;
+    color: black;
+    background-color: #b6b6b6;
+    border: 0.5px solid black;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: bold;    
+    cursor: pointer;
+    outline: none;
+}    
+button:hover{
+    color: rgb(19, 31, 98);
+    background-color: #a1ecf6;
+    border: 2px solid rgb(19, 31, 98);;    
+}    
+
+
+.restart {
+    /* display: none; */
+    position: static;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}    
+
+
